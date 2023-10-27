@@ -1,0 +1,14 @@
+@import '../abstract/variaveis';
+
+.rodape {
+    background-color: $cor-primaria;
+    .rodape__titulo {        
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem;
+        color: $cor-quartenaria;
+        font-family: $fonte-secundaria;
+    }
+
+}

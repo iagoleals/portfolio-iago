@@ -1,0 +1,92 @@
+@import '../abstract/variaveis';
+
+#projetos  {
+    background-color: $cor-quartenaria;
+    padding: 3rem 0;
+    .projetos__titulo {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    .projetos__cartoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .cartao {
+            display: flex;
+            flex-direction: column;
+        
+            background-color: $cor-secundaria;
+            
+            width: 100%;
+            max-width: 300px;
+        
+            margin-bottom: 2rem;
+        
+            border-radius: 5px;
+            box-shadow: 0 2px 10px 2px #00000010;
+            img {
+                width: 300px;
+                height: 200px;
+            }
+            .cartao__titulo {
+                font-weight: 400;
+                font-size: 1.5rem;
+                text-align: center;
+                
+                text-transform: uppercase;
+            
+                padding: 1rem 0;
+            
+                margin-bottom: 0.2rem;
+            
+                border-bottom: 1px solid $cor-terciaria;
+            }
+            .cartao__conteudo {
+                padding: 0 2.5rem;
+                .cartao__texto {
+                    
+                    line-height: 28px;
+                    
+                }
+                .cartao__botao {
+                    text-align: center;
+                
+                    display: block;
+                
+                    width: 100%;
+                    max-width: 350px;
+                
+                    box-sizing: border-box;
+                
+                    padding: 1rem 2rem;
+                
+                    border: 1px solid $cor-primaria;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    background-color: $cor-primaria;
+                    color: $cor-quartenaria;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                
+                    width: 100%;
+                
+                    align-self: center;
+                
+                    padding: 1rem 2rem;
+                
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .cartao__botao:hover {
+                    background-color: var(--cor-primaria);
+                    color: var(--cor-fonte);
+                }               
+            }         
+        }
+    }
+}
+    

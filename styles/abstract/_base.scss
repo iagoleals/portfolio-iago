@@ -1,0 +1,9 @@
+@import './variaveis';
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    color: $cor-primaria;
+    font-family: $fonte-principal;
+    
+   }

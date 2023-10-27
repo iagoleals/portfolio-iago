@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cedarville+Cursive&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+   
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>   
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#capa" class="lista-menu__link">Home</a></li>
+                <li class="lista-menu__item"><a href="#card" class="lista-menu__link">Sobre mim</a></li>
+                <li class="lista-menu__item"><a href="#skills" class="lista-menu__link">Habilidades</a></li>
+                <li class="lista-menu__item"><a href="#projetos" class="lista-menu__link">Projetos</a></li>
+            </ul>
+           <h1 class="container__titulo">Portfólio</h1>
+        </div>
+
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="#capa">Home</a>
+            <a class="cabecalho__menu__link" href="#card">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#skills">Habilidades</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+
+        </nav>
+    </header>  
+
+    <main>
+
+
+        <section id="capa">
+            <img src="img/iago capa.PNG" alt="imagem de Iago de Castro" class="capa__imagem">
+            <h1 class="capa__titulo">Iago de Castro</h1>
+            <p class="capa__texto"> Desenvolvedor Front-end</p>
+            <div class="capa__link">
+                <a class="card__sociais-navegacao" href="https://www.instagram.com/iagocmeira/"><img src="img/instagram-azul.svg" alt="icone do instagram"></a>
+                <a class="card__sociais-navegacao" href="https://github.com/iagoleals"><img src="img/github - azul.svg" alt="icone do github"></a>
+                <a class="card__sociais-navegacao" href="https://www.linkedin.com/in/iagodecastro/"><img src="img/linkedin-azul.svg" alt="icone do linkedin"></a>
+            </div>
+
+        </section>
+        <section id="card">                
+                <div class="card__conteudo" >
+                    <h3 class="card__subtitulo">Olá, eu sou</h3>
+                    <h2 class="card__titulo">Iago de Castro</h2>
+                    <h3 class="card__subtitulo">Desenvolvedor Front-end</h3>
+                    <div class="card__contato">                         
+                        <p class="card__contatos-botao"><img src="img/telefone.svg" alt="icone telefone"><a href="tel:+5577981328324">77981328324</a></p>
+                        <p class="card__contatos-botao"><img src="img/email.svg" alt="icone email"><a href="mailto: iagomeira96@gmail.com">iagomeira96@gmail.com</a></p>
+                        <p class="card__contatos-botao"><img src="img/calendario.svg" alt="icone calendario">17 de Junho de 1997</p>                       
+                    </div>
+
+                    <div>
+                        <div class="card__sociais">
+                            <a class="card__sociais-navegacao" href="https://www.instagram.com/iagocmeira/"><img src="img/instagram.svg" alt="icone do instagram"></a>
+                            <a class="card__sociais-navegacao" href="https://github.com/iagoleals"><img src="img/github.svg" alt="icone do github"></a>
+                            <a class="card__sociais-navegacao" href="https://www.linkedin.com/in/iagodecastro/"><img src="img/linkedin.svg" alt="icone do linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__about">
+                    <h3 class="about__titulo">Sobre mim</h3>
+                    <p class="about__texto">Sou estudante de programação Web, me especializando em Densenvolvimento Front-End. Sempre gostei de tecnologia, por isso entrei no mundo da programação, sempre buscando me aperfeiçoar no assunto. <br><br>Atualmente possuo conhecimentos avançados em HTML, CSS e Java Script, além de ferramentas como Sass e Tailwind. <br><br>Buscando uma nova oportunidade para experiencias desafiadoras em minha carreira de Desenvolvedor. Para poder continuar em constante evolução.</p>
+
+                </div>
+        </section >
+        <section id="skills">
+            <h2 class="skills__titulo">Habilidades</h2>
+            <ul class="skills__lista">
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-html"></div>
+                    <h3>HTML</h3>
+                    <p>A Linguagem de Marcação de Hipertexto (HTML).</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-css"></div>
+                    <h3>CSS</h3>
+                    <p>É chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-github"></div>
+                    <h3>Github</h3>
+                    <p>Permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-git"></div>
+                    <h3>Git</h3>
+                    <p>É um sistema de controle de versão para rastrear alterações em arquivos de computador e coordenar o trabalho nesses arquivos entre várias pessoas. </p>
+                </li>
+                <li class="skills__item"> 
+                    <div class="skills__imagem skills__imagem-javascript"></div>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-sass"></div>
+                    <h3>Sass</h3>
+                    <p>O SASS foi criado visando facilitar a criação de códigos CSS, por isso, nos traz várias vantagens que o CSS não possui.</p>
+                </li>
+                <li class="skills__item">
+                    <div class="skills__imagem skills__imagem-tailwind"></div>
+                    <h3>Tailwind</h3> 
+                    <p>Tailwind é um "framework CSS visando a utilidade", que fornece várias dessas classes utilitárias, opinativas e de propósito único, que você pode usar diretamente dentro do HTML</p>                   
+                </li>
+            </ul>    
+        </section>    
+        
+        
+        <section id="projetos">
+            <h2 class="projetos__titulo">Projetos</h2>
+            <ul class="projetos__cartoes">
+                <li class="cartao ">
+                    <img src="img/imagem1.png" alt="imagem de uma pessoa programando">
+                    <h3 class="cartao__titulo">Projeto#1</h3>
+                    <article class="cartao__conteudo">
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <a href="#" class="cartao__botao">Saiba mais</a>
+                    </article>
+                </li>
+                <li class="cartao">
+                    <img src="img/imagem2.png" alt="imagem de uma pessoa programando">
+                    <h3 class="cartao__titulo">Projeto#2</h3>
+                    <article class="cartao__conteudo">
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <a href="#" class="cartao__botao ">Saiba mais</a>
+                    </article>
+                </li>
+                <li class="cartao">
+                    <img src="img/imagem3.png" alt="ilustração de uma pessoa programando">
+                    <h3 class="cartao__titulo">Projeto#3</h3>
+                    <article class="cartao__conteudo">
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <p class="cartao__texto">Em breve</p>
+                        <a href="#" class="cartao__botao">Saiba mais</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        
+    </main> 
+
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Desenvolvido por Iago de Castro</h2>
+
+
+    </footer>
+    
+</body>
+</html>

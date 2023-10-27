@@ -1,0 +1,81 @@
+@import '../abstract/variaveis';
+
+
+#skills {
+    background-color: $cor-primaria; 
+    color: $cor-secundaria;
+    .skills__titulo {        
+        font-weight: 700;
+        font-size: 1.5rem;        
+        text-transform: uppercase;
+        text-align: center;    
+       padding: 1.25rem 0;
+    }
+    .skills__lista {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem 5rem;
+        align-items: center;
+        .skills__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 70%;
+            text-align: center;
+            .skills__imagem {    
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+                border: 1px transparent $cor-primaria;
+                padding: 3rem;
+                background-color: $cor-secundaria;
+                border-radius: 50%;
+                margin: 2rem;
+                background-position: center;          
+            
+            }
+            .skills__imagem:hover {
+                background-color: $cor-secundaria;
+            }
+            h3 {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 24px;
+            }
+            p {
+                
+                font-size: 16px;
+                padding-top: 0.5rem;
+               
+            }
+            .skills__imagem-html{
+                background-image: url(../img/html.svg);
+            
+            }
+            .skills__imagem-css {
+                background-image: url(../img/css.svg);
+            
+            }
+            .skills__imagem-github {
+                background-image: url(../img/github2.svg);
+            
+            }
+            .skills__imagem-git {
+                background-image: url(../img/Git.svg);
+            
+            }
+            .skills__imagem-javascript {
+                background-image: url(../img/js.svg);
+            
+            }
+            
+            .skills__imagem-sass {
+                background-image: url(../img/sass.svg);
+            }
+            .skills__imagem-tailwind {
+                background-image: url(../img/Tailwind.svg);
+            }
+            
+        }
+    
+    }
+}

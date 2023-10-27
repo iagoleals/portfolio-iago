@@ -1,0 +1,362 @@
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  color: #071952;
+  font-family: "Space Mono", monospace;
+}
+
+.cabecalho {
+  background-color: #071952;
+  box-sizing: border-box;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cabecalho .container .container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url("../img/Menu Aberto.svg");
+}
+.cabecalho .container .container__botao:checked ~ .container__rotulo {
+  background-color: #D8E3E7;
+}
+.cabecalho .container .container__botao:checked ~ .lista-menu {
+  display: block;
+}
+.cabecalho .container .container__imagem {
+  padding: 1rem;
+}
+.cabecalho .container .cabecalho__menu-hamburguer {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/Menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.cabecalho .container .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100vw;
+}
+.cabecalho .container .lista-menu .lista-menu__item {
+  padding: 1em;
+  background-color: #071952;
+}
+.cabecalho .container .lista-menu .lista-menu__item .lista-menu__link {
+  background: #D8E3E7;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.cabecalho .container .container__botao {
+  display: none;
+}
+.cabecalho .container .container__titulo {
+  font-weight: 700;
+  color: #D8E3E7;
+  text-transform: uppercase;
+  padding-right: 1rem;
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+}
+.cabecalho .cabecalho__menu {
+  display: none;
+}
+
+#capa {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-color: rgba(14, 24, 95, 0.8);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #FFFFFF;
+}
+#capa .capa__imagem {
+  width: 200px;
+  border-radius: 50%;
+}
+#capa .capa__titulo {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 52px;
+}
+#capa .capa__texto {
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+}
+#capa .capa__link {
+  display: flex;
+  gap: 2rem;
+}
+
+#card {
+  background-color: #D8E3E7;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 3rem;
+}
+#card .card__conteudo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+#card .card__conteudo .card__titulo {
+  font-size: 42px;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+#card .card__conteudo .card__subtitulo {
+  font-size: 20px;
+  font-weight: 600;
+}
+#card .card__conteudo .card__contatos-botao {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  font-size: 16px;
+}
+#card .card__conteudo .card__contatos-botao a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #071952;
+}
+#card .card__conteudo .card__sociais {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#card .card__conteudo .card__sociais .card__sociais-navegacao img {
+  transition: 0.5s;
+}
+#card .card__conteudo .card__sociais .card__sociais-navegacao img:hover {
+  transform: scale(1.5);
+}
+#card .card__about .about__titulo {
+  font-size: 30px;
+  font-weight: 600;
+}
+#card .card__about .about__texto {
+  font-size: 16px;
+  width: 600px;
+  padding: 1rem 0;
+  line-height: 1.2;
+  width: 90%;
+}
+
+#projetos {
+  background-color: #D8E3E7;
+  padding: 3rem 0;
+}
+#projetos .projetos__titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+#projetos .projetos__cartoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projetos .projetos__cartoes .cartao {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.062745098);
+}
+#projetos .projetos__cartoes .cartao img {
+  width: 300px;
+  height: 200px;
+}
+#projetos .projetos__cartoes .cartao .cartao__titulo {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  margin-bottom: 0.2rem;
+  border-bottom: 1px solid #000000;
+}
+#projetos .projetos__cartoes .cartao .cartao__conteudo {
+  padding: 0 2.5rem;
+}
+#projetos .projetos__cartoes .cartao .cartao__conteudo .cartao__texto {
+  line-height: 28px;
+}
+#projetos .projetos__cartoes .cartao .cartao__conteudo .cartao__botao {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  border: 1px solid #071952;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #071952;
+  color: #D8E3E7;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  align-self: center;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#projetos .projetos__cartoes .cartao .cartao__conteudo .cartao__botao:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-fonte);
+}
+
+#skills {
+  background-color: #071952;
+  color: #FFFFFF;
+}
+#skills .skills__titulo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.25rem 0;
+}
+#skills .skills__lista {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 5rem;
+  align-items: center;
+}
+#skills .skills__lista .skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+}
+#skills .skills__lista .skills__item .skills__imagem {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 1px transparent #071952;
+  padding: 3rem;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin: 2rem;
+  background-position: center;
+}
+#skills .skills__lista .skills__item .skills__imagem:hover {
+  background-color: #FFFFFF;
+}
+#skills .skills__lista .skills__item h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+#skills .skills__lista .skills__item p {
+  font-size: 16px;
+  padding-top: 0.5rem;
+}
+#skills .skills__lista .skills__item .skills__imagem-html {
+  background-image: url(../img/html.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-css {
+  background-image: url(../img/css.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-github {
+  background-image: url(../img/github2.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-git {
+  background-image: url(../img/Git.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-javascript {
+  background-image: url(../img/js.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-sass {
+  background-image: url(../img/sass.svg);
+}
+#skills .skills__lista .skills__item .skills__imagem-tailwind {
+  background-image: url(../img/Tailwind.svg);
+}
+
+.rodape {
+  background-color: #071952;
+}
+.rodape .rodape__titulo {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem;
+  color: #D8E3E7;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .cabecalho {
+    position: absolute;
+    background-color: transparent;
+  }
+  .cabecalho .container {
+    display: none;
+  }
+  .cabecalho .cabecalho__menu {
+    display: block;
+    display: flex;
+    gap: 3rem;
+    justify-content: end;
+    padding: 3rem;
+  }
+  .cabecalho .cabecalho__menu .cabecalho__menu__link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  #card {
+    padding: 0 3rem;
+    margin: 5rem;
+    margin: 3rem;
+    flex-direction: row;
+  }
+  #card .card__about {
+    padding: 3rem;
+    width: 50%;
+  }
+  #skills .skills__lista {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 6rem;
+  }
+  #skills .skills__lista .skills__item {
+    width: 30%;
+    max-width: 300px;
+  }
+  #projetos .projetos__cartoes {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */

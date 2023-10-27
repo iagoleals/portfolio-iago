@@ -1,0 +1,35 @@
+@import '../abstract/variaveis';
+
+#capa {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-color: rgb(14, 24, 95, 0.8); 
+    background-blend-mode: overlay; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: $cor-secundaria;
+    .capa__imagem {
+        width: 200px;
+        border-radius: 50%;   
+    }
+    .capa__titulo {
+        font-family: $fonte-capa;
+        font-size: 52px;
+    }
+    
+    .capa__texto {
+        font-family: $fonte-principal;
+        font-size: 20px;
+    }
+    .capa__link {
+        display: flex;
+        gap: 2rem;
+    }
+
+
+}

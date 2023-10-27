@@ -1,0 +1,78 @@
+@import '../abstract/variaveis';
+
+.cabecalho {
+    background-color: $cor-primaria;
+    box-sizing: border-box;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer {
+            background-image: url("../img/Menu Aberto.svg");
+        }
+        
+        .container__botao:checked~.container__rotulo {
+            background-color:  $cor-quartenaria;
+        }
+        .container__botao:checked~.lista-menu {
+            display: block;
+        }
+        .container__imagem{
+            padding: 1rem ;
+        }
+        .cabecalho__menu-hamburguer {
+            width: 24px;
+            height: 24px;
+            background-image: url("../img/Menu.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+           
+          
+        }
+        .lista-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            width: 100vw;
+            .lista-menu__item {
+                padding: 1em;
+                background-color: $cor-primaria;
+                .lista-menu__link {
+                    background: $cor-quartenaria;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-transform: uppercase;
+                   
+                
+                }
+
+            
+            }
+        }
+        .container__botao{
+            display: none;
+        }
+        
+        .container__titulo {
+            font-weight: 700;
+            color: $cor-quartenaria;
+            text-transform: uppercase;
+            padding-right: 1rem;
+            font-size: 24px;
+            font-family: $fonte-secundaria;
+         
+
+        }      
+    } 
+    .cabecalho__menu {
+        display: none;
+    }
+
+}       
